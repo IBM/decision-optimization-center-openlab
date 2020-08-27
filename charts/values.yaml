@@ -1,11 +1,11 @@
 global:
-  version: "1.0.4"
+  version: "1.0.5"
   host: dochol-195f866332fa98d1a9ed5bba5a35e11b-0000.us-south.containers.appdomain.cloud
   imagePullSecrets:
     -
       dockerconfigjson: ewoJImF1dGhzIjogewoJCSJkYmdlbmUtZGVtb3MtcmVnaXN0cnkuZGVjaXNpb25icmFpbi5jbG91ZCI6IHsKCQkJImF1dGgiOiAiWkdKblpXNWxMV1JsYlc5ek9tbGxVMmhoTVZCdiIKCQl9Cgl9LAoJIkh0dHBIZWFkZXJzIjogewoJCSJVc2VyLUFnZW50IjogIkRvY2tlci1DbGllbnQvMTkuMDMuNiAobGludXgpIgoJfQp9Cg==
       name: dbgene-demos-registry.decisionbrain.cloud
-  imageRegistry: dbgene-demos-registry.decisionbrain.cloud/capacity-planning
+  imageRegistry: us.icr.io/dte-registry
   target: openshift
   users:
     -
@@ -13,12 +13,12 @@ global:
 
 doc-common:
   dbos:
-    imageRegistry: dbgene-demos-registry.decisionbrain.cloud
+    imageRegistry: us.icr.io/dte-registry
     imagePullSecrets:
       - name: dbgene-demos-registry.decisionbrain.cloud
 
   infra:
-    imageRegistry: dbgene-demos-registry.decisionbrain.cloud
+    imageRegistry: us.icr.io/dte-registry
     imagePullSecrets:
       - name: dbgene-demos-registry.decisionbrain.cloud
     keycloak:
